@@ -48,11 +48,10 @@ def main():
     for chunk, similarity in retrieved_knowledge:
         print(f' - (similarity: {similarity:.2f}) {chunk.strip()}')
 
-    instruction_prompt = f"""
-                          You are a helpful chatbot.
-                          Use only the following pieces of context to answer the question. Don't make up any new information:
-                          {'\n'.join([' - ' + chunk for chunk, similarity in retrieved_knowledge])}
-                          """
+    instruction_prompt = f"""You are a helpful chatbot.
+Use only the following pieces of context to answer the question. Don't make up any new information:
+{'\n'.join([' - ' + chunk for chunk, similarity in retrieved_knowledge])}
+"""
 
     stream = ollama.chat(
         model=LL_MODEL,
