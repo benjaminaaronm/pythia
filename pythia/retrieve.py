@@ -1,5 +1,6 @@
 import ollama
 from .config import EMBEDDING_MODEL
+from .bm25_store import BM25Store
 
 
 def cosine_similarity(a, b):
@@ -16,15 +17,17 @@ def embed_query(query):
     return result['embeddings'][0]
 
 
-def retrieve(index, query, top_n=5):
-    """
-    index: list of entries with keys: 'text', 'embedding', 'doc_id', 'title'
-    returns list of (entry, similarity)
-    """
-    query_embedding = embed_query(query)
-    similarities = []
-    for entry in index:
-        similarity = cosine_similarity(query_embedding, entry['embedding'])
-        similarities.append((entry, similarity))
-    similarities.sort(key=lambda x: x[1], reverse=True)
-    return similarities[:top_n]
+class RetrieverRanker(object):
+    def __init__(self, index_entries):
+        self.index = index_entries
+        self.bm25_store = BM25Store(index_entries)
+
+    def retrieve(self, query, bm25_n=20, final_n=5):
+        bm25_candidates = self.bm25_store.retrieve(query, top_n=bm25_n)
+        query_embedding = embed_query(query)
+        similarities = []
+        for entry, _ in bm25_candidates:
+            similarity = cosine_similarity(query_embedding, entry['embedding'])
+            similarities.append((entry, similarity))
+        similarities.sort(key=lambda x: x[1], reverse=True)
+        return similarities[:final_n]
