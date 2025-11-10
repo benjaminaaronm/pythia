@@ -1,0 +1,162 @@
+[
+  {
+    "id": "q01",
+    "question": "According to the corpus, what is a bank in the context of finance?",
+    "answer": "A bank is a financial institution that accepts deposits from the public, creates demand deposits, and lends money in the form of loans and advances."
+  },
+  {
+    "id": "q02",
+    "question": "Name two core ways in which banks earn money.",
+    "answer": "Banks earn money mainly by paying lower interest on deposits than they charge on loans and by charging fees for services such as payment processing and account maintenance."
+  },
+  {
+    "id": "q03",
+    "question": "Who are the Big Four accounting firms?",
+    "answer": "The Big Four accounting firms are Deloitte, Ernst & Young (EY), KPMG, and PricewaterhouseCoopers (PwC)."
+  },
+  {
+    "id": "q04",
+    "question": "What types of professional services do the Big Four typically offer besides audit and assurance?",
+    "answer": "Besides audit and assurance, the Big Four typically offer services such as taxation, management consulting, corporate finance, valuation, actuarial services, market research, and legal services."
+  },
+  {
+    "id": "q05",
+    "question": "How does the article define business?",
+    "answer": "Business is the practice of making one’s living or making money by producing or buying and selling products, such as goods and services."
+  },
+  {
+    "id": "q06",
+    "question": "What is data science?",
+    "answer": "Data science is an interdisciplinary field that uses statistics, scientific computing, methods and systems to extract or extrapolate knowledge and insights from structured and unstructured data."
+  },
+  {
+    "id": "q07",
+    "question": "What is a data warehouse used for?",
+    "answer": "A data warehouse is a central repository that integrates current and historical data from multiple sources and is optimized for reporting, analysis, and business intelligence, helping managers and analysts make decisions."
+  },
+  {
+    "id": "q08",
+    "question": "How do OLTP and OLAP systems differ according to the data warehouse article?",
+    "answer": "OLTP systems are optimized for many short, real-time transactions and preserving data integrity, while OLAP systems are optimized for complex analytical queries over aggregated historical data, often with star schemas and lower transaction rates."
+  },
+  {
+    "id": "q09",
+    "question": "What is deep learning?",
+    "answer": "Deep learning is a subfield of machine learning that uses deep neural networks with many layers of nonlinear processing units to learn hierarchical representations and solve tasks such as vision, speech recognition, and other complex problems."
+  },
+  {
+    "id": "q10",
+    "question": "Name one common problem with training deep neural networks and one technique to mitigate it.",
+    "answer": "A common problem is overfitting, which can be mitigated with regularization techniques such as weight decay, sparsity penalties, or dropout that randomly omits units during training."
+  },
+  {
+    "id": "q11",
+    "question": "What does the electric power industry do in broad terms?",
+    "answer": "The electric power industry generates, transmits, distributes, and sells electric power to end users, operating the infrastructure commonly referred to as the power grid."
+  },
+  {
+    "id": "q12",
+    "question": "What is meant by the energy industry?",
+    "answer": "The energy industry comprises all industries involved in the production and sale of energy, including fuel extraction, manufacturing, refining, and distribution of resources such as oil, gas, coal, and electricity."
+  },
+  {
+    "id": "q13",
+    "question": "What is enterprise risk management (ERM)?",
+    "answer": "Enterprise risk management is an organization-wide approach to identifying, assessing, and managing risks across all business units so that they remain within the entity’s risk appetite and do not prevent it from achieving its strategic objectives."
+  },
+  {
+    "id": "q14",
+    "question": "How does the article define financial services?",
+    "answer": "Financial services are economic services tied to finance that are provided by financial institutions and include activities such as banking, investment management, insurance, and consumer finance."
+  },
+  {
+    "id": "q15",
+    "question": "What is information technology (IT)?",
+    "answer": "Information technology is the study or use of computers, telecommunication systems, and related equipment to create, process, store, retrieve, and transmit information."
+  },
+  {
+    "id": "q16",
+    "question": "What is information technology consulting?",
+    "answer": "Information technology consulting is a field that focuses on advising organizations on how best to use information technology to achieve their business objectives."
+  },
+  {
+    "id": "q17",
+    "question": "What kind of organization is KPMG according to the corpus?",
+    "answer": "KPMG is a global network of professional firms providing audit, tax, and advisory services, organized as independent member firms that belong to KPMG International Limited, a UK limited company."
+  },
+  {
+    "id": "q18",
+    "question": "What is a large language model (LLM)?",
+    "answer": "A large language model is a language model with a very large number of parameters that is trained on massive text corpora to predict and generate natural language, enabling tasks such as text generation and question answering."
+  },
+  {
+    "id": "q19",
+    "question": "How does the article define machine learning?",
+    "answer": "Machine learning is a field of inquiry that gives computers the ability to learn from data without being explicitly programmed, by building models that can make predictions or decisions based on examples."
+  },
+  {
+    "id": "q20",
+    "question": "What is management consulting?",
+    "answer": "Management consulting is the practice of helping organizations improve their performance by analyzing existing organizational problems and developing plans for improvement in areas such as strategy, structure, and operations."
+  },
+  {
+    "id": "q21",
+    "question": "What is MLOps?",
+    "answer": "MLOps is a set of practices for deploying, monitoring, and maintaining machine learning models in production in a reliable and efficient way, integrating machine learning with DevOps principles."
+  },
+  {
+    "id": "q22",
+    "question": "How is natural language processing (NLP) described in the corpus?",
+    "answer": "Natural language processing is a subfield of linguistics, computer science, and artificial intelligence concerned with enabling computers to process, understand, and generate human language."
+  },
+  {
+    "id": "q23",
+    "question": "What are professional services?",
+    "answer": "Professional services are occupations in the service sector that require specialized training, such as architects, accountants, engineers, doctors, and lawyers, as well as specialist business support like tax advice, IT services, and management services."
+  },
+  {
+    "id": "q24",
+    "question": "How is risk management defined?",
+    "answer": "Risk management is the identification, evaluation, and prioritization of risks followed by coordinated efforts to minimize, monitor, and control the probability or impact of unfortunate events."
+  },
+  {
+    "id": "q25",
+    "question": "What is sport management?",
+    "answer": "Sport management is an interdisciplinary field that applies business and management principles to the sports industry, covering areas such as sports leagues, facilities, tourism, and sports media."
+  },
+  {
+    "id": "q26",
+    "question": "What are the two main aspects of sports analytics mentioned in the article?",
+    "answer": "Sports analytics has two key aspects: on-field analytics, which focuses on improving team and player performance, and off-field analytics, which supports the business side of sports, such as ticket sales, fan engagement, and profitability."
+  },
+  {
+    "id": "q27",
+    "question": "How does the telecommunications article define telecommunications?",
+    "answer": "Telecommunications is the transmission of information over distances for the purpose of communication, using technologies such as telephone, radio, television, and computer networks."
+  },
+  {
+    "id": "q28",
+    "question": "What is a transformer in deep learning?",
+    "answer": "A transformer is a deep learning architecture based on self-attention mechanisms that processes sequences in parallel rather than recurrently and has become the basis for many state-of-the-art models in natural language processing."
+  },
+  {
+    "id": "q29",
+    "question": "How do data warehouses support business intelligence in this corpus?",
+    "answer": "Data warehouses support business intelligence by integrating cleansed, historical data from multiple operational systems into a central repository that enables online analytical processing, reporting, and data mining for decision-making."
+  },
+  {
+    "id": "q30",
+    "question": "What is the relationship between data science and machine learning according to the articles?",
+    "answer": "Data science is a broader interdisciplinary field concerned with extracting knowledge and insights from data, while machine learning provides many of the algorithms and models that data scientists use for prediction and pattern discovery."
+  },
+  {
+    "id": "q31",
+    "question": "How can MLOps practices benefit a telecommunications company deploying deep learning models?",
+    "answer": "For a telecommunications company, MLOps practices help reliably deploy and monitor deep learning models used in areas such as network optimization, predictive maintenance, or customer churn prediction, ensuring that models are versioned, reproducible, and continuously updated with new data."
+  },
+  {
+    "id": "q32",
+    "question": "Why is enterprise risk management particularly relevant for energy and electric power companies?",
+    "answer": "Energy and electric power companies face significant operational, financial, regulatory, and environmental risks, so enterprise risk management helps them systematically identify and manage these risks across the organization to maintain reliable service and comply with regulations while pursuing their strategic objectives."
+  }
+]
