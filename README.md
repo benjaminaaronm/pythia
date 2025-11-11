@@ -43,7 +43,7 @@ You will need:
 
 - **Python**
 
-  The project has been built with Python 3.12.
+  - The project has been built with Python 3.12.
 
 - **Ollama**
 
@@ -278,7 +278,7 @@ This keeps the container lighter and avoids embedding the entire Ollama runtime.
 From the project root:
 
 ```bash
-docker build -t pythia-api .
+docker build -t pythia-api:0.1.0 .
 ```
 
 The image:
@@ -292,14 +292,16 @@ The image:
   uvicorn pythia.api:app --host 0.0.0.0 --port 8000
   ```
 
-### 9.2 Ensure Ollama is running on the host in accordance with points 2. and 3.
+### 9.2 Ensure Ollama is running on the host
+
+Make sure Ollama is installed, running, and the required models are pulled, as described in sections 2 and 3 of this README.
 
 ### 9.3 Run the API container
 
 On Docker Desktop, the special hostname `host.docker.internal` lets containers reach the host. We use it to let the API container talk to the host’s Ollama instance:
 
 ```bash
-docker run --rm -p 8000:8000 -e OLLAMA_HOST=http://host.docker.internal:11434  pythia-api
+docker run --rm -p 8000:8000 -e OLLAMA_HOST=http://host.docker.internal:11434 pythia-api:0.1.0
 ```
 
 Now:

@@ -20,7 +20,8 @@ def main():
 
         print('---- Retrieved context ----')
         for entry, score in retrieved:
-            print(f'[{score:.2f}] {entry["doc_id"]} - {entry["text"][:120].replace("\n", " ") + "..."}')
+            preview = entry["text"][:120].replace("\n", " ") + "..."
+            print(f'[{score:.2f}] {entry["doc_id"]} - {preview}')
 
 
 if __name__ == '__main__':
