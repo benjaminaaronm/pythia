@@ -4,9 +4,9 @@ from .bm25_store import BM25Store
 
 
 def cosine_similarity(a, b):
-    dot_product = sum([x * y for x, y in zip(a, b)])
-    norm_a = sum([x ** 2 for x in a]) ** 0.5
-    norm_b = sum([x ** 2 for x in b]) ** 0.5
+    dot_product = sum(x * y for x, y in zip(a, b))
+    norm_a = sum(x ** 2 for x in a) ** 0.5
+    norm_b = sum(x ** 2 for x in b) ** 0.5
     if norm_a == 0 or norm_b == 0:
         return 0.0
     return dot_product / (norm_a * norm_b)

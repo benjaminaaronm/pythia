@@ -5,7 +5,6 @@ from .config import EMBEDDING_MODEL, INDEX_PATH
 
 def embed_text(text):
     result = ollama.embed(model=EMBEDDING_MODEL, input=text)
-    # Result format: {'embeddings': [[...]]}
     return result['embeddings'][0]
 
 

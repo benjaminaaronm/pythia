@@ -5,7 +5,7 @@ from .config import LL_MODEL
 def build_prompt(question, context_entries):
     context_parts = []
     for entry, score in context_entries:
-        part = f'Source: {entry['title']} (doc_id={entry['doc_id']}, score={score:.2f})\n{entry['text']}'
+        part = f'Source: {entry["title"]} (doc_id={entry["doc_id"]}, score={score:.2f})\n{entry["text"]}'
         context_parts.append(part)
 
     context_text = '\n\n'.join(context_parts)

@@ -55,15 +55,17 @@ def chunk_documents(docs, max_chars=800, overlap_chars=100):
     {'chunk_id': int, 'doc_id': str, 'text': str, 'title': str}
     """
     chunks = []
+    chunk_id = 0
     for doc in docs:
         doc_chunks = chunk_text(doc['text'], max_chars=max_chars, overlap_chars=overlap_chars)
-        for id, ch in enumerate(doc_chunks):
+        for ch in doc_chunks:
             chunks.append({
-                'chunk_id': id,
+                'chunk_id': chunk_id,
                 'doc_id': doc['doc_id'],
                 'title': doc['title'],
                 'text': ch
             })
+            chunk_id += 1
     return chunks
 
 

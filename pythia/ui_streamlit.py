@@ -22,7 +22,7 @@ def main():
 
             st.subheader('Retrieved context')
             for ctx in data['contexts']:
-                st.markdown(f'**{ctx['title']}** (score: {ctx['score']:.2f})')
+                st.markdown(f'**{ctx["title"]}** (score: {ctx["score"]:.2f})')
                 st.write(ctx['text'])
                 st.markdown('---')
         else:
